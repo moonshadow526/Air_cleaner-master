@@ -1,0 +1,37 @@
+*** Creating Trace Output File '..\OBJ\ultrasonic.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\obj\main.o"'
+### List of Objects: adding '"..\obj\stm32f10x_it.o"'
+### List of Objects: adding '"..\obj\system_stm32f10x.o"'
+### List of Objects: adding '"..\obj\led.o"'
+### List of Objects: adding '"..\obj\key.o"'
+### List of Objects: adding '"..\obj\lcd.o"'
+### List of Objects: adding '"..\obj\timer4_cap.o"'
+### List of Objects: adding '"..\obj\ultrasonicwave.o"'
+### List of Objects: adding '"..\obj\delay.o"'
+### List of Objects: adding '"..\obj\sys.o"'
+### List of Objects: adding '"..\obj\usart.o"'
+### List of Objects: adding '"..\obj\core_cm3.o"'
+### List of Objects: adding '"..\obj\startup_stm32f10x_hd.o"'
+### List of Objects: adding '"..\obj\misc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_fsmc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_gpio.o"'
+### List of Objects: adding '"..\obj\stm32f10x_rcc.o"'
+### List of Objects: adding '"..\obj\stm32f10x_usart.o"'
+### List of Objects: adding '"..\obj\stm32f10x_tim.o"'
+### ADS-LD Command completed:
+--device DARMSTM "..\obj\main.o" "..\obj\stm32f10x_it.o" "..\obj\system_stm32f10x.o" "..\obj\led.o" "..\obj\key.o" "..\obj\lcd.o" "..\obj\timer4_cap.o" "..\obj\ultrasonicwave.o" "..\obj\delay.o" "..\obj\sys.o" "..\obj\usart.o" "..\obj\core_cm3.o" "..\obj\startup_stm32f10x_hd.o" "..\obj\misc.o" "..\obj\stm32f10x_fsmc.o" "..\obj\stm32f10x_gpio.o" "..\obj\stm32f10x_rcc.o" "..\obj\stm32f10x_usart.o" "..\obj\stm32f10x_tim.o" --strict --scatter "..\OBJ\ultrasonic.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\ultrasonic.map" -o "..\OBJ\ultrasonic.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\OBJ\ultrasonic.axf'
+### ADS-LD Command File: '..\OBJ\ultrasonic.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\OBJ\ultrasonic.lnp', Handle=0x000002E4
+### Writing '.lnp' file
+### ADS-LD Command file '..\OBJ\ultrasonic.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
