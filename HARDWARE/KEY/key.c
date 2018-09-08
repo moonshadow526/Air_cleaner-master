@@ -15,6 +15,8 @@
 //All rights reserved									  
 //////////////////////////////////////////////////////////////////////////////////  
 								    
+u8 Relayout_f = 0;									
+									
 //按键初始化函数
 void KEY_Init(void) //IO初始化
 { 
@@ -76,7 +78,7 @@ void EXTIX_Init(void)
 u8 KEY_Scan(u8 mode)
 {	 
 	static u8 key_up=1;//按键按松开标志
-	static u8 Relayout_f = 0;
+//	static u8 Relayout_f = 0;
 	if(mode)key_up=1;  //支持连按		  
 	if(key_up&&KEY1==0)
 	{
@@ -96,11 +98,12 @@ u8 KEY_Scan(u8 mode)
 
 void EXTI3_IRQHandler(void)
 {
-	static u8 Relayout_f = 0;
+//	static u8 Relayout_f = 0;
 	delay_ms(10);//消抖
 	if(KEY1==0)	 //按键KEY1
 	{				 
 		RELAYOUT = ~Relayout_f;
+		RELAYBEEP = ~Relayout_f;
 		Relayout_f = RELAYOUT;
 	}		
 	delay_ms(10);

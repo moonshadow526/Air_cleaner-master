@@ -1,6 +1,7 @@
 #include "includes.h"
 
 extern uint8_t get_Air_adc_val_f;
+extern u8 Relayout_f;
 extern u32 ChipUniqueID[3];
 extern volatile u8 hrbit_cnt;
 
@@ -70,7 +71,6 @@ int main(void)
 //	STMFLASH_Read(FLASH_SAVE_ADDR,(u16*)datatemp,sizeof(datatemp));
 //	printf("read flash data is: %s\n",datatemp);
 	set_status_flag(POWERON);
-
 	while(1) 
 	{	
 //		KEY_Scan(0);
@@ -141,7 +141,7 @@ int main(void)
 //		{
 			Air_adc_val = Get_Adc_Average(2,3);
 			Air_vol = Air_adc_val*3.45/4096;
-			if (Air_vol > 0.3)           //2.2v
+			if (Air_vol > 0.4)           //2.2v
 				breath_LED_f = 1;
 //		}
 		//breath led control
